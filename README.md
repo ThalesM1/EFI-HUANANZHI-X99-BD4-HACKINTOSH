@@ -65,9 +65,9 @@ Access the bios, using DEL key during start
   7. IntelRCSetup -> Processor Configuration -> Execute Disable Bit -> disable
 
  ## Enable
- 1. Go to advanded -> USB Configuration -> XHCI
- 2. Go to advanded -> USB Configuration -> EHCI
- 3. InterRCSetup -> Processor Configuration -> Hyper Threading 
+ 1. Go to advanded -> USB Configuration -> XHCI Hand-off -> enable
+ 2. Go to advanded -> USB Configuration -> EHCI Hand-off -> enable
+ 3. InterRCSetup -> Processor Configuration -> Hyper Threading -> enable
 
 ## Thanks/Credits
 
