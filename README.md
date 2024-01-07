@@ -1,11 +1,5 @@
 # HUANANZHI X99 BD4 + Intel® Xeon® E5-2670 v3 + AMD Radeon™ RX 6600 + Fenvi T919
 
-![Image alt text](/Images/1.png)
-
-<div align="center">
-<img src="./Images/2.png">
-</div>
-
 
 **Latest working macOS**: 14.2.1
 <br>
@@ -62,7 +56,7 @@ Geekbench v5            |  Geekbench v6
 - [Opencore Team](https://dortania.github.io/getting-started/)
 - [BASE-EFI-INTEL-HEDT-4THGEN-X99-HASWELL-E](https://github.com/luchina-gabriel/BASE-EFI-INTEL-HEDT-4THGEN-X99-HASWELL-E)
 - [Gabriel Luchina](https://github.com/luchina-gabriel)
-- [vncsmnl]
+- [vncsmnl](https://github.com/vncsmnl)
 ## Discord - Universo Hackintosh
 
 - [Access Discord](https://discord.universohackintosh.com.br)
