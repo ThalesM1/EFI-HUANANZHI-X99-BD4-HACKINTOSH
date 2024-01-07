@@ -43,14 +43,6 @@
 - [x] WhateverGreen.kext
 - [x] XHCI-unsupported.kext
 
-## Benchmark Results:
-
-Geekbench v5            |  Geekbench v6
-:-------------------------:|:-------------------------:
-![CPU](/Benchmark/CPU_Benchmark_v5.png) |  ![GPU Metal](/Benchmark/CPU_Benchmark_v6.png)
-![GPU Metal](/Benchmark/GPU_Benchmark_Metal_v5.png) |  ![GPU Metal](/Benchmark/GPU_Benchmark_Metal_v6.png)
-![GPU OpenCL](/Benchmark/GPU_Benchmark_OpenCL_v5.png) |  ![GPU Metal](/Benchmark/GPU_Benchmark_OpenCL_v6.png)
-
 ## Thanks/Credits
 
 - [Opencore Team](https://dortania.github.io/getting-started/)
