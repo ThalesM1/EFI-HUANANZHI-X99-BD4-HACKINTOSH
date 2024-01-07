@@ -44,13 +44,13 @@
 - [x] XHCI-unsupported.kext
 
 
-## How does it works: 
+## How does it works (if you have the same hardware): 
   0. Config the BIOS, expecs bellow
-  1. Get the EFI, if you have the same hardware
+  1. Get the EFI
   2. Config the SMBIOS, generating one with genSMBIOS, then edit it using properTree: ROM, SystemUUID, MLB, system serial number
   3. Download **macOs Catalina** from macrecovery
-  4. Create the bootable pen drive
-  5. Update from there 
+  4. Create the bootable pen drive, install Catalina from Open Core
+  5. Update from oficial Apple
 
 
 ## BIOS Settings:
