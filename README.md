@@ -45,6 +45,7 @@
 
 
 ## How does it works: 
+  0. Config the BIOS, expecs bellow
   1. Get the EFI, if you have the same hardware
   2. Config the SMBIOS, generating one with genSMBIOS, then edit it using properTree: ROM, SystemUUID, MLB, system serial number
   3. Download **macOs Catalina** from macrecovery
@@ -53,31 +54,20 @@
 
 
 ## BIOS Settings:
+Access the bios, using DEL key during start
 ## Disable
-- Fast Boot
-- Secure Boot
-- Serial/COM Port
-- Parallel Port
-- VT-d (can be enabled if you set DisableIoMapper to YES)
-- Compatibility Support Module (CSM).
-- Thunderbolt(For initial install, as Thunderbolt can cause issues if not setup correctly)
-- Intel SGX
-- Intel Platform Trust
-- CFG Lock (MSR 0xE2 write protection)
-- This must be off, if you can't find the option then ENABLE AppleXcpmCfgLock.
-- Your hack will not boot with CFG-Lock enabled.
-- For 10.10 and older, you'll need to ENABLE AppleCpuPmCfgLock as well.
-## Enable
-- VT-x
-- Above 4G decoding.
-- This must be on, if you can't find the option then add npci=0x2000 to boot-args.
-- Do not have both this option and npci on boot-args enabled at the same time.
-- Hyper-Threading
-- Execute Disable Bit
-- EHCI/XHCI Hand-off
-- OS type: Windows 8.1/10 UEFI Mode
-- SATA Mode: AHCI
+  1. Go to advanded -> ACPI settings -> ACPI sleep state -> disable
+  2. Go to advanded -> NCT55320 Super IO configuration -> Serial Port 1 -> serial port -> disable
+  3. Go to advanded -> CSM Configuration -> video -> change to UEFI -> disable
+  4. Reboot the machine
+  5. Go to advanded -> CSM Configuration -> CSM Support -> disable
+  6. IntelRCSetup -> Processor Configuration -> MSR Lock Control -> disable
+  7. IntelRCSetup -> Processor Configuration -> Execute Disable Bit -> disable
 
+ ## Enable
+ 1. Go to advanded -> USB Configuration -> XHCI
+ 2. Go to advanded -> USB Configuration -> EHCI
+ 3. InterRCSetup -> Processor Configuration -> Hyper Threading 
 
 ## Thanks/Credits
 
