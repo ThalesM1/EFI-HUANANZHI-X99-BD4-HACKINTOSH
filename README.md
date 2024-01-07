@@ -46,7 +46,7 @@
 
 ## How does it works: 
   1. Get the EFI, if you have the same hardware
-  2. Config the SMBIS using properTree: ROM, SystemUUID, MLB, system serial number
+  2. Config the SMBIOS, generating one with genSMBIOS, then edit it using properTree: ROM, SystemUUID, MLB, system serial number
   3. Download **macOs Catalina** from macrecovery
   4. Create the bootable pen drive
   5. Update from there 
