@@ -650,7 +650,7 @@
 			<key>AppleCpuPmCfgLock</key>
 			<false/>
 			<key>AppleXcpmCfgLock</key>
-			<true/>
+			<false/>
 			<key>AppleXcpmExtraMsrs</key>
 			<true/>
 			<key>AppleXcpmForceBoost</key>
@@ -692,7 +692,7 @@
 			<key>ThirdPartyDrives</key>
 			<false/>
 			<key>XhciPortLimit</key>
-			<false/>
+			<true/>
 		</dict>
 		<key>Scheme</key>
 		<dict>
@@ -721,7 +721,7 @@
 			<key>InstanceIdentifier</key>
 			<string></string>
 			<key>HideAuxiliary</key>
-			<true/>
+			<false/>
 			<key>LauncherOption</key>
 			<string>Full</string>
 			<key>LauncherPath</key>
@@ -900,28 +900,24 @@
 		<dict>
 			<key>AdviseFeatures</key>
 			<false/>
-			<key>MLB</key>
-			<string>XXXXXXXXXXXXXXXXX</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
+			<key>MLB</key>
+			<string>XXXXXXXXXXXX</string>
 			<key>ProcessorType</key>
 			<integer>3841</integer>
 			<key>ROM</key>
-<<<<<<< HEAD
-			<data>AAAAAAAA</data>
-=======
-			<data>qqqqqqqq</data>
->>>>>>> 74c159f10c06d4f2bcc10f7e52e7d9b74883dbee
+			<data>nPwBVJBw</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>SMBIOS-PRODUCT-NAME</string>
+			<string>MacPro7,1</string>
 			<key>SystemSerialNumber</key>
-			<string>XXXXXXXXXXXX</string>
+			<string>XXXXXXXXXXXXXX</string>
 			<key>SystemUUID</key>
-			<string>XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</string>
+			<string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
