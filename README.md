@@ -50,16 +50,18 @@
   2. Config the SMBIOS, generating one with genSMBIOS, then edit it using properTree: ROM, SystemUUID, MLB, system serial number
   3. Download **macOs Catalina** from macrecovery
   4. Create the bootable pen drive, install Catalina from Open Core
-  5. Update from oficial Apple
-  6. A few modifications will be needed to make the wifi works, this modification will be made within the apple environment, with the opencore configurator
-  7. Use the hackintool to see if the wifi card is recognized
-  8. Open config.plist and modify secure-boot to false
-  9. Add two kexts to kext folder: IOSkywalkFamily.kext and IO80211SkywalkFamily.kext and change the min kernel in the config.plist to 23.0.0
-  10. Go to block add a new block: inside the field identifier type: com.apple.iokit.IOSkywalkFamily; and in the field comment type: Allow IOSkywalk Downgrade. Set the min kernel = 23.0.0 and Strategy to enable, and then enable
-  11. Go to boot-args and add amfi=0x80, go to csr-active-config and set the value to 03080000
-  12. Reboot
-  13. Use the [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases), go to Root Patching
-  14. Done    
+  5. Update from official Apple
+  6. A few modifications will be needed to make the wifi works, this modification will be made within the apple environment with the opencore configurator
+
+     Wifi -> make wifi work on Sonoma 
+  1. Use the hackintool to see if the wifi card is recognized
+  2. Open config.plist and modify secure-boot to false
+  3. Add two kexts to kext folder: IOSkywalkFamily.kext and IO80211SkywalkFamily.kext and change the min kernel in the config.plist to 23.0.0
+  4. Go to block add a new block: inside the field identifier type: com.apple.iokit.IOSkywalkFamily; and in the field comment type: Allow IOSkywalk Downgrade. Set the min kernel = 23.0.0 and Strategy to enable, and then enable
+  5. Go to boot-args and add amfi=0x80, go to csr-active-config and set the value to 03080000
+  6. Reboot
+  7. Use the [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases), go to Root Patching
+  8. Done    
 
 
 ## BIOS Settings:
