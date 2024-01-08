@@ -30,10 +30,10 @@
 
 ## Kexts used:
 
-- [x] AppleALC.kext
+- [x] Lilu.kext
 - [x] CpuTscSync.kext
 - [x] FeatureUnlock.kext
-- [x] Lilu.kext
+- [x] AppleALC.kext
 - [x] RealtekRTL8111.kext
 - [x] RestrictEvents.kext
 - [x] SMCSuperIO.kext
@@ -42,6 +42,8 @@
 - [x] VirtualSMC.kext
 - [x] WhateverGreen.kext
 - [x] XHCI-unsupported.kext
+- [X] IOSkywalkFamily.kext
+- [X] IO80211SkywalkFamily.kext
 
 
 ## How does it works (if you have the same hardware): 
