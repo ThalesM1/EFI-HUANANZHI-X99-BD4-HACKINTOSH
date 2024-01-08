@@ -47,15 +47,15 @@
 
 
 ## How does it works (if you have the same hardware): 
-  0. Config the BIOS, expecs bellow
-  1. Get the EFI
-  2. Config the SMBIOS, generating one with genSMBIOS, then edit it using properTree: ROM, SystemUUID, MLB, system serial number
-  3. Download **macOs Catalina** from macrecovery
-  4. Create the bootable pen drive, install Catalina from Open Core
-  5. Update from official Apple
-  6. A few modifications will be needed to make the wifi works, this modification will be made within the apple environment with the opencore configurator
+  1. Config the BIOS, expecs bellow
+  2. Get the EFI
+  3. Config the SMBIOS, generating one with genSMBIOS, then edit it using properTree: ROM, SystemUUID, MLB, system serial number
+  4. Download **macOs Catalina** from macrecovery
+  5. Create the bootable pen drive, install Catalina from Open Core
+  6. Update from official Apple
+  7. A few modifications will be needed to make the wifi works, this modification will be made within the apple environment with the opencore configurator
 
-     Wifi -> make wifi work on Sonoma 
+## Wifi -> make wifi work on Sonoma: 
   1. Use the hackintool to see if the wifi card is recognized
   2. Open config.plist and modify secure-boot to false
   3. Add two kexts to kext folder: IOSkywalkFamily.kext and IO80211SkywalkFamily.kext and change the min kernel in the config.plist to 23.0.0
