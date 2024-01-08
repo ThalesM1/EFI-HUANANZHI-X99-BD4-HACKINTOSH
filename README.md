@@ -67,7 +67,7 @@
 
 
 ## BIOS Settings:
-Access the bios, using DEL key during start
+Access the bios, using DEL key during start, DO NOT flash the bios in this configuration, it can cause irreversible damage to the Motherboard, do it manually
 ## Disable
   1. Go to advanded -> ACPI settings -> ACPI sleep state -> disable
   2. Go to advanded -> NCT55320 Super IO configuration -> Serial Port 1 -> serial port -> disable
