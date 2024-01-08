@@ -18,7 +18,7 @@
 ## What works
 
 - macOS Sonoma, Ventura, Big Sur, Catalina and macOS Monterey
-- Audio
+- Audio -> with boot-args: alcid=11 
 - HDMI/DP (in dGPU - Works OOB)
 - All USB ports
 - Everything iCloud related (Drive, iMessage, Facetime, unlock with Apple Watch, etc)
@@ -51,6 +51,10 @@
   3. Download **macOs Catalina** from macrecovery
   4. Create the bootable pen drive, install Catalina from Open Core
   5. Update from oficial Apple
+  6. A few modifications will be needed to make the wifi works
+    6.1. Use the hackintool to see if the wifi card is recognizes
+    6.2. Add two kext: Skywalker
+    6.3 Use the OpenCore Legacy Patcher   
 
 
 ## BIOS Settings:
