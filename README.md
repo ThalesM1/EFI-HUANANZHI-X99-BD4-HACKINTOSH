@@ -9,7 +9,7 @@
 
 ## Complete hardware specs
 
-- Intel® Xeon® E5-2670 v3 (All cores activated)
+- Intel® Xeon® E5-2670 v3 (All physical cores activated)
 - HUANANZHI X99 BD4 + Unlock Turbo Boost + Resizable Bar Activated
 - AMD Radeon™ RX 6600
 - 2x 16Gb DDR4 3200Mhz ECC Atermiter
@@ -18,7 +18,7 @@
 ## What works
 
 - macOS Sonoma, Ventura, Big Sur, Catalina and macOS Monterey
-- Audio -> with boot-args: alcid=11 
+- Audio (Sonoma ->  you will have to add in boot-args: alcid=11)  
 - HDMI/DP (in dGPU - Works OOB)
 - All USB ports
 - Everything iCloud related (Drive, iMessage, Facetime, unlock with Apple Watch, etc)
@@ -26,7 +26,7 @@
 - DRM content (Netflix, ATV+, Airplay 2 mirroring etc)
 - Shutdown/Reboot/Update to newer macOS builds over time
 - Resizable Bar ON (ResizeUsePciRbIo = true)
-- Wi-fi/Bluetooth/AirDrop - OpenCore Legacy Patcher
+- Wi-fi/Bluetooth/AirDrop - OpenCore Legacy Patcher (see below) 
 
 ## Kexts used:
 
@@ -51,10 +51,15 @@
   3. Download **macOs Catalina** from macrecovery
   4. Create the bootable pen drive, install Catalina from Open Core
   5. Update from oficial Apple
-  6. A few modifications will be needed to make the wifi works
+  6. A few modifications will be needed to make the wifi works, this modification will be made within the apple environment, with the opencore configurator
     6.1. Use the hackintool to see if the wifi card is recognizes
-    6.2. Add two kext: Skywalker
-    6.3 Use the OpenCore Legacy Patcher   
+    6.2 Open config.plist and modify secure-boot to false and 
+    6.3 Add two kexts to kext folder: IOSkywalkFamily.kext and IO80211SkywalkFamily.kext and change the min kernel in the config.plist to 23.0.0
+    6.4 Go to block add a new block: inside the field identifier type: com.apple.iokit.IOSkywalkFamily; and in the field comment type: Allow IOSkywalk Downgrade. Set the min kernel = 23.0.0 and Strategy to enable, and then enable
+    6.5 go to boot-args and add amfi=0x80, go to csr-active-config and set the value to 03080000
+    6.6 Reboot     
+    6.7 Use the [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher/releases), go to Root Patching
+    6.8 Done    
 
 
 ## BIOS Settings:
