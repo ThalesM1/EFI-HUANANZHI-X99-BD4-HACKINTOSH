@@ -4,7 +4,7 @@
 **Latest working macOS**: 14.2.1
 <br>
 **Current OpenCore**: 0.9.7
-
+**Tested independently by two equal computers**
 ---
 
 ## Complete hardware specs
